@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DaniLedes99/react-tasks-example.git/static/css/main.f3fb96a4.css",
+    "main.js": "/DaniLedes99/react-tasks-example.git/static/js/main.26d01c8b.js",
+    "index.html": "/DaniLedes99/react-tasks-example.git/index.html",
+    "main.f3fb96a4.css.map": "/DaniLedes99/react-tasks-example.git/static/css/main.f3fb96a4.css.map",
+    "main.26d01c8b.js.map": "/DaniLedes99/react-tasks-example.git/static/js/main.26d01c8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3fb96a4.css",
+    "static/js/main.26d01c8b.js"
+  ]
+}
