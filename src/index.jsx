@@ -20,17 +20,7 @@ const user = [
 ];
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <TaskContextProvider>
-      <App />
-      {user.map((user, index) => {
-        return (
-          <div key={index}>
-            <h1>{user.name}</h1>
-            <img src={user.image}></img>
-          </div>
-        );
-      })}
-    </TaskContextProvider>
-  </React.StrictMode>
+  <TaskContextProvider>
+    <App />
+  </TaskContextProvider>
 );

@@ -30,23 +30,15 @@ function App() {
     setCounter(counter + 1);
   };
 
-  /*   useEffect(() => {
-    console.log("render");
-  });  //se realiza una función o se renderiza algo q me indique mi useeffect cada vez que algo cambie dentro de app//
   useEffect(() => {
     console.log("render");
-  },[]); //se renderiza una sola vez sin importar cuantas veces cambie algo dentro de la funcion app, esto para un fetch// */
-
-  useEffect(() => {
-    console.log("render");
-  }, [counter]); //acá se muestra una dependencia, porque se renderiza dependiendo si counter cambia o no de valor//
+  }, [counter]);
 
   return (
     <main className="bg-zinc-900 h-screen">
       <div className="container mx-auto p-10">
-        <TaskForm /* createTask={createTask} */ />
-        {/* ya no necesito pasarles funciones ni nada porque los voy a pasar por context */}
-        <TaskList /* tasks={tasks} deleteTask={deleteTask} */ />
+        <TaskForm />
+        <TaskList />
       </div>
 
       <TaskCardRobot ready={true} />

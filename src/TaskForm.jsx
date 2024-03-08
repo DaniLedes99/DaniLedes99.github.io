@@ -2,17 +2,16 @@ import React from "react";
 import { useState, useContext } from "react";
 import { TaskContext } from "./Context/TaskContext";
 
-function TaskForm(/* { createTask } */) {
-  /* se lo paso por context */
+function TaskForm() {
   const [title, settitle] = useState("");
   const [description, setdescription] = useState("");
 
-  const { createTask } = useContext(TaskContext); //le cargo la funcion cargada en el context
+  const { createTask } = useContext(TaskContext);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); //para evitar el comportamiento por default del formulario q me recarga la pagina al enviar//
+    e.preventDefault();
     createTask({ title, description });
-    settitle(""); // Limpiar el input después de enviar
+    settitle("");
     setdescription("");
   };
 

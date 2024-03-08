@@ -2,8 +2,8 @@ import TaskCard from "./TaskCard";
 import { TaskContext } from "./Context/TaskContext";
 import { useContext } from "react";
 import "tailwindcss/tailwind.css";
-function TaskList(/* {tasks, deleteTask} */) {
-  const { /* deleteTask, */ tasks } = useContext(TaskContext);
+function TaskList() {
+  const { tasks } = useContext(TaskContext);
 
   if (tasks?.length === 0) {
     return (
@@ -16,7 +16,7 @@ function TaskList(/* {tasks, deleteTask} */) {
   return (
     <div className="grid grid-cols-4 gap-2">
       {tasks?.map((task, i) => (
-        <TaskCard key={i} task={task} /* deleteTask={deleteTask} */ />
+        <TaskCard key={i} task={task} />
       ))}
     </div>
   );
