@@ -40,23 +40,6 @@ function App() {
         <TaskForm />
         <TaskList />
       </div>
-
-      <TaskCardRobot ready={true} />
-      <Button text="click me" name="oliwisss" />
-      <Button text="Pay" />
-      <Button text="SUMA" name="" onClick={handleContador} />
-      <h1>{counter}</h1>
-      <button onClick={Posts}>ENVIAR</button>
-
-      <form onSubmit={handleEnviarClick}>
-        <input
-          type="text"
-          value={inputValue}
-          placeholder="Escribe algo..."
-          onChange={handleInputChange}
-        />
-      </form>
-      <p>Escribiste: {mensajeEnviado}</p>
     </main>
   );
 }
