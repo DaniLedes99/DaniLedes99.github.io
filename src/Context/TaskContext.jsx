@@ -2,18 +2,7 @@ import React from "react";
 import { createContext, useState, useEffect } from "react";
 /* import { tasks as data } from "../task.js"; */
 
-const initial = [
-  {
-    id: 0,
-    title: "mi primer tarea",
-    description: "mi primera chamba",
-  },
-  {
-    id: 1,
-    title: "mi segunda tarea",
-    description: "mi segunda chamba",
-  },
-];
+const initial = [];
 
 export const TaskContext = createContext();
 

@@ -14,7 +14,7 @@ function TaskCard({ task }) {
       <h1 className="text-xl font-bold capitalize">{task.title}</h1>
       <p className="text-gray-500 text-sm">{task.description}</p>
       <button
-        className="bg-red-500 px-2 py-1 roundend-md mt-4 hover:bg-red-400"
+        className="bg-red-500 px-2 py-1 roundend-md mt-4 hover:bg-red-400 button"
         onClick={handleClick}
       >
         Eliminar tarea

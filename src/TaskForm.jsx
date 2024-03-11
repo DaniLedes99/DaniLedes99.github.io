@@ -23,6 +23,7 @@ function TaskForm() {
           className="bg-slate-300 p-3 w-full mb-2"
           placeholder="Escribe tu tarea"
           value={title}
+          maxLength={17}
           autoFocus
           onChange={(e) => {
             settitle(e.target.value);
