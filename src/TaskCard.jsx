@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { TaskContext } from "./Context/TaskContext";
 import "tailwindcss/tailwind.css";
 
-function TaskCard({ task /* deleteTask */ }) {
+function TaskCard({ task }) {
   const { deleteTask } = useContext(TaskContext);
 
   function handleClick() {
